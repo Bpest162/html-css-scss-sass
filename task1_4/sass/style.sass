@@ -1,0 +1,164 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+
+html
+    font-size: 10px
+
+body
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #1E1E1E
+    height: 100vh
+
+.container
+    position: relative
+    display: flex
+    align-items: center
+    overflow: hidden
+    height: 100%
+    width: 70%
+    padding-left: 150px
+
+.cub
+    width: 150px
+    height: 150px
+    background-color: #1E1E1E
+.path-box
+    width: 80%
+    display: flex
+    
+
+.path
+    display: flex
+    justify-content: space-around
+    width: 100%
+    padding-right: 10rem
+    animation: eating-path 0.5s linear infinite
+
+.path
+    &::before
+        content: ""
+        background-color: #ffffff
+        height: 4.3rem
+        width: 4.3rem
+        border-radius: 50%
+
+@keyframes eating-path
+    0%
+        transform: translateX(50%)
+    100%
+        transform: translateX(-50%)
+
+.pacman
+    position: relative
+    background: transparent
+    z-index: 1
+    left: -14.1rem
+.pacman
+    &::before
+        content: ""
+        position: absolute
+        top: -100px
+        display: block
+        border-radius: 50%
+        height: 0px
+        width: 0px
+    &::after
+        content: ""
+        position: absolute
+        top: -100px
+        
+        display: block
+        border-radius: 50%
+        height: 0px
+        width: 0px
+
+.pacman
+    &::before
+        animation: chunk-top 0.5s ease infinite
+        border: 100px solid #F2682A
+        border-left-color: transparent
+        border-bottom-color: transparent
+    
+@keyframes chunk-top
+
+    0%  
+        transform: rotate(-50deg)
+    100%
+        transform: rotate(-45deg)
+    
+    50% 
+        transform: rotate(-100deg)
+
+.pacman
+    &::after
+        animation: chunk-bottom 0.5s ease infinite
+        border: 100px solid #F2682A
+        border-right-color: transparent
+        border-top-color: transparent
+
+
+@keyframes chunk-bottom
+    0%
+
+    100%
+        transform: rotate(-40deg)  
+
+    50%
+        transform: rotate(0deg)  
+
+.ear1
+    width: 0px
+    height: 0px
+    border-top: 62px solid #F2682A
+    border-right: 100px solid transparent 
+    position: absolute
+    top: -12rem
+    left: 5rem
+    transform: rotate(-45deg)
+
+.ear2 
+    width: 0px
+    height: 0px
+    border-top: 50px solid #F2682A
+    border-right: 75px solid transparent 
+    position: absolute
+    top: -11rem
+    left: 8.5rem
+    transform: rotate(-45deg)
+        
+.tail
+    position: absolute
+    z-index: 10
+    display: inline-block
+    top: -2rem    //top: -2rem 
+    left: -8.5rem  //left: -8.5rem
+    animation: tail 0.5s ease infinite
+    transform: rotate(-30deg)
+    &::before
+        content: ""
+        position: absolute
+        display: inline-block
+
+
+        
+.tail
+    &::before
+        animation: tail 0.5s ease infinite
+        
+
+@keyframes tail
+    0% 
+        left: -8.5rem
+        transform: rotate(-30deg)
+    50%
+        top: -5rem
+        left: -6.5rem
+        transform: rotate(10deg)
+        
+    100%
+        
+
+

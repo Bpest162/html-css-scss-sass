@@ -1,0 +1,142 @@
+
+.input
+    position: absolute
+    width: 1px
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+
+.menu-box
+    position: fixed
+    top: 0
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 
+    align-items: center
+    justify-content: center
+    text-align: center
+    background: linear-gradient( rgba(255, 79, 0, 1) -622%, rgba(255, 255, 255,)159%)
+    z-index: 10
+  
+.menu-desctop
+    display: none
+
+.foxmenu
+    display: block
+    width: 100%
+    font-size: 2.4rem
+    font-weight: 700
+    color: #532322
+    padding: 5rem 4rem
+    letter-spacing: .1rem
+    cursor: pointer
+    &__span
+        background: #532322
+        background-clip: content-box
+        color: rgb(255, 255, 255)
+        line-height: 100%
+    
+.nav
+    display: block
+    position: absolute
+    width: 100%
+    max-height: 100%
+    background: linear-gradient( rgba(255, 79, 0, 1) -622%, rgba(255, 255, 255,)40%)
+    top: 0
+    left: 0
+    
+ 
+    
+.nav__link1
+    display: block
+    text-decoration: none
+    padding: 3rem 4rem
+    font-size: 3.1rem
+    font-weight: 400
+    letter-spacing: .15rem
+    line-height: 150%
+    color: #CC5520
+    cursor: pointer
+    transition: 0.3s all
+    z-index: 10
+    &:hover
+        background: #CC5520
+        color: rgba(255, 255, 255)
+.nav__link
+    display: block
+    text-decoration: none
+    padding: 3rem 4rem
+    font-size: 3.1rem
+    font-weight: 400
+    letter-spacing: .15rem
+    line-height: 150%
+    color: #0F001A
+    cursor: pointer
+    transition: 0.3s all
+    z-index: 10
+    &:hover
+        background: #CC5520
+        color: rgba(255, 255, 255)
+.nav__menu
+    padding: 0
+.exit
+    position: relative
+    display: block
+    text-decoration: none
+    padding: 5.3rem 4rem
+    font-size: 0
+    font-weight: 400
+    letter-spacing: .15rem
+    line-height: 150%
+    color: #0F001A
+    cursor: pointer
+    transition: 0.3s all
+    &:hover
+        background: #CC5520
+        color: rgba(255, 255, 255)
+    
+.exit:hover ~ .x1,.x2
+    background: #ffffff
+
+.x1,
+.x2
+    display: block
+    position: absolute
+    width: 2rem
+    height: 0.3rem
+    background: #969595
+    left: 49%
+    transform: translate(-50%)
+
+.x1
+    transform: rotate(45deg)
+.x2
+    transform: rotate(-45deg)
+
+
+
+.blur  
+    position: relative
+    position: absolute
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    
+    bottom: 0
+    left: 0
+    transform: translateY(100%)
+    height: 0
+    overflow: hidden 
+    //-webkit-filter: blur(12px)
+    //filter: blur(12px)
+    transition: .6s all 
+    z-index: 0
+
+.nav-container
+    z-index: 3
+
+
+#dropdown:checked ~ .blur 
+    height: 1000%
+    
+.menu-wrapper
+    display: none

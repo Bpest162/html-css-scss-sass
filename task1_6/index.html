@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Documentation</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <input type="checkbox" id="dropdown">
+            <label class="menu" for="dropdown">CSS Documentation</label>
+            <span class="arrow"></span>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li class="menu-item"><a class="nav-menu__item" href="#Intruduction">Intruduction</a></li>
+                    <li class="menu-item"><a class="nav-menu__item" href="#prerequisites">Prerequisites</a></li>
+                    <li class="menu-item"><a class="nav-menu__item" href="#modules">Modules</a></li>
+                    <li class="menu-item"><a class="nav-menu__item" href="#problems">Solving common CSS problems</a></li>
+                    <li class="menu-item"><a class="nav-menu__item" href="#working">Working with CSS</a></li>
+                    <li class="menu-item"><a class="nav-menu__item" href="#adding">Adding CSS</a></li>
+                    <li class="menu-item li-box-logo"><a class="nav-menu__item" href="#See-also">See also</a>
+                        <img class="header__logo" src="img/Group 1187.png" alt="logo-foxminded">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="aside">
+            <nav class="aside__nav">
+                <img class="logo" src="img/Group 1187.png" alt="logo-foxminded">
+                <h1 class="nav__title">CSS Documentation</h1>
+                <ul>
+                    <li class="aside__nav-item"><a class="aside__item" href="#Intruduction">Intruduction</a></li>
+                    <li class="aside__nav-item"><a class="aside__item" href="#prerequisites">Prerequisites</a></li>
+                    <li class="aside__nav-item"><a class="aside__item" href="#modules">Modules</a></li>
+                    <li class="aside__nav-item"><a class="aside__item" href="#problems">Solving common CSS problems</a></li>
+                    <li class="aside__nav-item"><a class="aside__item" href="#working">Working with CSS</a></li>
+                    <li class="aside__nav-item"><a class="aside__item" href="#adding">Adding CSS</a></li>
+                    <li class="aside__nav-item"><a class="aside__item" href="#See-also">See also</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <section id="Intruduction">
+                <div>
+                    <h2 class="main__title">Intruduction</h2>
+                    <p class="main__text"> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                </div>
+                <div>
+                    <h2 class="main__title">Styling text</h2>
+                    <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                </div>
+                <div>
+                    <h2 class="main__title">CSS layout</h2>
+                    <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be </p>
+                </div>
+            </section>
+            <section id="prerequisites">
+                <h2 class="main__title">Prerequisites</h2>
+                <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+            </section>
+            <section id="modules">
+                <h2 class="main__title">Modules</h2>
+                <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+            </section>
+            <section id="problems">
+                <h2 class="main__title">Solving common CSS problems</h2>
+                <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+            </section>
+            <section id="working">
+                <h2 class="main__title">Working with CSS</h2>
+                <p class="main__text"> It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, etc.</p>
+                <ul class="working-list">
+                    <li>font-family</li>
+                    <li>color</li>
+                    <li>border-bottom</li>
+                    <li>font-weight</li>
+                    <li>font-size</li>
+                    <li>text-decoration</li>
+                </ul>
+            </section>
+            
+            <section id="adding">
+                <h2 class="main__title">Adding CSS</h2>
+                <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+                <div class="bg-string"> &#60;link rel=”stylesheet” href=”styles.css”&#62; </div>
+                <p class="main__text">This <span class="bg-link">&#60;link&#62;</span> element tell thw browser that we have a stylesheet, using the rel attribute? and the location of that stylesheet as the value of the <span class="bg-link">href</span> attribute.</p>
+            </section>
+            <section id="See-also">
+                <h2 class="main__title">See also</h2>
+                <p class="main__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

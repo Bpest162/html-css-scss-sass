@@ -1,0 +1,109 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@mixin align-centr
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+body
+    min-height: 100%
+    font-family: 'Roboto'
+    font-weight: 700
+    letter-spacing: 0.2rem
+
+
+.parallax-wrapper
+    height: 100vh
+    overflow-x: hidden
+    overflow-y: auto
+    perspective: 300px
+
+.parallax-group
+    position: relative
+    height: 100vh
+    transform-style: preserve-3d
+    @include align-centr
+
+
+.autumn
+    @include align-centr
+    background-color: #D64200
+    z-index: -1
+    
+
+.winter
+    @include align-centr
+    background-color: #0057FF
+    
+
+.spring
+    @include align-centr
+    background-color: #00CC39
+    
+
+.summer
+    @include align-centr
+    background-color: #F19F00
+    
+
+.parallax-title
+    position: absolute
+    top: 55%
+    color: rgba(255, 255, 255, 0.3)
+    font-size: 320px
+    transform: translateZ(50px) scale(0.8)
+
+
+.image1
+    position: absolute
+    width: 711px
+    height: 771px
+    background-image: url("../img/autumn.png")
+    background-repeat: no-repeat
+    background-size: cover
+    transform: translateZ(100px)  scale(0.6)
+    
+
+.image2
+    position: absolute
+    width: 730px
+    height: 678px
+    background-image: url("../img/winter.png")
+    background-repeat: no-repeat
+    background-size: cover
+    transform: translateZ(100px)  scale(0.6)
+   
+
+.image3
+    position: absolute
+    width: 989px
+    height: 664px
+    background-image: url("../img/spring.png")
+    background-repeat: no-repeat
+    background-size: cover
+    transform: translateZ(100px)  scale(0.6)
+    
+
+.image4
+    position: absolute
+    width: 653px
+    height: 619px
+    background-image: url("../img/summer.png")
+    background-repeat: no-repeat
+    background-size: cover
+    transform: translateZ(100px)  scale(0.6)
+    
+
+    
+
+
+
+

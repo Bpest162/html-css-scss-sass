@@ -1,0 +1,468 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+@import "typography.sass"
+
+@import "nav-menu.sass"
+@import "slider.sass"
+@import "form.sass"
+@import "footer.sass"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+    scroll-behavior: smooth
+
+body
+    min-height: 100%
+    font-family: 'Roboto'
+    font-weight: 400 
+    letter-spacing: 0.2rem
+
+.container 
+    width: 100%
+    min-height: 100%
+    position: relative
+    display: grid
+    grid-template-columns: 1fr
+
+.header
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 
+    align-items: center
+    background: linear-gradient( rgba(255, 79, 0, 1) -622%, rgba(255, 255, 255,)60%)
+    position: relative
+    
+.header__content
+    width: 100%
+    padding: 14.1rem 1rem 6.5rem 1rem 
+    display: grid
+    grid-template-columns: 1fr 
+    justify-items: center
+    align-items: center
+    row-gap: 3rem
+
+.desc
+    max-width: 63.6rem
+    display: flex
+    flex-direction: column
+
+.img
+    justify-self: center
+.img img
+    width: 35.5rem
+    height: 43rem
+
+.button
+    justify-self: center
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    justify-content: center
+    column-gap: 2rem
+    &__link
+        display: block
+        width: 16.8rem
+        height: 5.6rem
+        background-color: #000000
+        cursor: pointer
+        text-align: center
+        border-radius: .5rem
+.button__link img
+    padding: 1.3rem 0 0 0
+
+.section-card
+    display: grid
+    justify-content: center
+    align-content: center
+    grid-template-columns: 1fr
+    row-gap: 4rem
+    padding: 4rem 1rem
+    &__title
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.card
+    width: 35.5rem
+    justify-self: center
+    display: grid
+    border-radius: 1rem
+    box-shadow: .5rem 2rem 50px 0 rgba(234, 145, 39, 0.5)
+    padding: 4rem
+    background: #ffffff
+    &__img
+        justify-self: center
+.card3 img
+    margin-top: 3rem
+.decor1,
+.decor2,
+.decor3,
+.decor4
+    display: none
+
+.section-account
+    width: 100%
+    background: #CC5520
+    display: grid
+    grid-template-columns: 1fr
+    row-gap: 5.5rem
+    text-align: center
+    padding: 5rem 
+    &__block
+        display: grid
+        grid-template-columns: 1fr
+        row-gap: 5rem
+
+.account
+    display: grid
+    grid-template-columns: 1fr
+    align-items: center
+    z-index: 0
+    &__img
+        justify-self: center
+        margin-bottom: 3rem
+
+.section-slider
+    position: relative
+    display: grid
+    grid-template-columns: 1fr
+.slider-container
+    display: grid
+    grid-template-columns: 1fr
+    row-gap: 2.5rem
+    padding: 0 1rem 5rem 1rem
+    &__fox
+        text-align: center
+    &__fox img
+        width: 22.1rem
+        height: 25.34rem
+
+.fox-bg
+    width: 100%
+    height: 21rem
+    background: #FFE9D0
+    position: absolute
+    z-index: -1
+    top: 20rem
+
+.enjoy
+    display: grid
+    grid-template-columns: 1fr
+    row-gap: 5.5rem
+    justify-content: center
+    text-align: center
+    padding: 0 1rem 4.5rem 1rem
+    &__desc
+        display: grid
+        grid-template-columns: 1fr 
+.enjoy__img img
+    width: 35.5rem
+    height: 31.5rem
+    background-position: center
+        
+
+
+
+@media (min-width: 1100px)
+    .container
+        display: grid
+        grid-template-columns: auto
+        overflow: hidden
+       
+    .header
+        box-shadow: 0 4px 16px 0 rgba(75, 0, 129, 0.26)
+        margin-bottom: 160px
+        grid-template-columns: auto
+        align-items: center
+        justify-content: center
+
+
+    .menu-box
+        display: none
+    .menu-wrapper
+        width: 100%
+        background: linear-gradient( rgba(255, 79, 0, 1) -622%, rgba(255, 255, 255,)147%)
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 3
+        display: flex
+        flex-direction: column
+        align-items: center
+    .menu-desctop
+        max-width: 1000px
+        display: grid
+        grid-template-columns: minmax(123px, 650px) auto
+        padding-top: 65px 
+        padding-bottom: 55px 
+        align-items: center
+        
+        
+    .nav-desctop
+        display: block
+        
+    .logo-fox
+        text-decoration: none
+        width: 100%
+        font-size: 24px
+        font-weight: 700
+        color: #532322
+        letter-spacing: 1px
+        cursor: pointer
+    .nav-link
+        display: flex
+        flex-direction: row
+        column-gap: 55px
+    .nav-link__item
+        text-decoration: none
+        font-size: 18px
+        font-weight: 400
+        letter-spacing: 1.5px
+        line-height: 150%
+        color: #0F001A
+        
+    .nav-link__item1
+        text-decoration: none
+        font-size: 18px
+        font-weight: 400
+        letter-spacing: 1.5px
+        line-height: 150%
+        color: #CC5520
+
+    .header__content
+        position: relative
+        max-width: 1350px
+        grid-template-columns: minmax(400px, 773px) auto
+        grid-template-areas: "desc img" "button img"
+        margin-top: 35px
+        
+        
+    .img img
+        width: 441px
+        height: 534.78px
+
+    .desc
+        max-width: 540px
+        grid-area: desc
+        padding-top: 34px
+        
+    .img
+        position: relative
+        justify-self: end
+        grid-area: img
+
+
+    .button1
+        grid-area: button
+        padding-right: 180px
+        justify-self: center
+        align-self: start
+
+    .section-card
+        max-width: 1200px
+        grid-template-columns: 550px 520px
+        grid-template-areas: "title-card card1" "card2 card1" "card2 card3"
+        justify-self: center
+        padding: 0 10px 0 10px 
+        margin-bottom: 150px
+          
+    .card 
+        position: relative
+    
+    .decor1,
+    .decor2,
+    .decor3
+        display: block
+        position: absolute
+        z-index: -1
+
+    .decor1
+        top: -67px
+        right: -92px
+    .decor2
+        left: -96px
+        bottom: -82px
+    .decor3
+        right: -96px
+        bottom: -82px
+
+    .section-card__title
+        grid-area: title-card
+        padding-bottom: 98px
+    .main-title
+        font-size: 50px
+        
+    .card1
+        grid-area: card1
+        justify-self: center
+        margin-left: 50px
+    .card2
+        height: 525px
+        grid-area: card2
+        justify-self: end
+        
+    .card3
+        margin-top: 50px
+        grid-area: card3
+        justify-self: center
+        margin-left: 50px
+
+    .section-account
+        justify-content: center
+        align-items: center
+    .section-account__block
+        max-width: 1000px
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 100px
+        justify-self: center
+        margin-bottom: 70px
+    .title-secondary
+        margin-top: 50px
+
+    .section-slider
+        margin-bottom: 150px
+    .slider-container
+        max-width: 1000px
+        position: relative
+        grid-template-columns: 1fr 1fr
+        grid-template-areas: "img-fox title" "img-fox slider"
+        justify-self: center
+        margin: 100px 0 0 0
+        column-gap: 50px
+        padding: 0 0 0 0
+        overflow: hidden
+        &__fox img
+            width: 382px
+            height: 438px
+
+    .fox-bg
+        width: 45%
+        height: 400px 
+        top: 290px
+
+    .slider-container__title
+        display: block
+        font-size: 50px
+        grid-area: title
+        justify-self: end
+        
+
+    .slider-container__fox
+        grid-area: img-fox
+        padding-top: 50px
+        justify-self: start
+
+    .slider-wrapper
+        height: 500px
+        grid-area: slider
+        padding: 0
+        align-self: end
+        padding-top: 225px
+
+    .controls
+        top: 85%
+
+    .quote
+        width: 50px
+        height: 50px
+        top: 27%
+    .decor4
+        display: block
+        position: absolute
+        top: 55%
+        right:100px
+
+    .enjoy
+        max-width: 1200px
+        grid-template-columns: 600px 418px
+        justify-self: center
+        margin-bottom: 65px
+        padding-right: 0
+        &__img
+            justify-self: start
+        &__img img
+            width: 516px
+            height: 458.39px
+    .enjoy-text
+        margin: 0
+
+    .enjoy-title
+        align-self: end
+
+    .section-form
+        padding: 50px 0 50px 0
+
+    .section-form__link
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+    .section-form__title
+        line-height: 80%
+    .links__title
+        font-size: 18px
+        line-height: 100%
+        margin-bottom: 20px
+    .links
+        text-align: start
+    .link
+        font-size: 14px
+    .icons
+        display: none
+    
+    .footer-box
+        max-width: 1230px
+        display: grid
+        grid-template-columns: minmax(249px, 600px) minmax(163px, 600px)
+        align-items: center
+        padding: 30px 15px 30px 15px
+    .rights
+        justify-self: start
+    .rights__text
+        
+        padding: 0
+        
+    .icons-desctop
+        justify-self: end
+        display: block
+        display: flex
+        flex-direction: row
+        column-gap: 18px
+        
+@media (min-width: 1280px)
+    .section-link
+        display: grid
+        grid-template-columns: 1fr
+    .section-form
+        max-width: 1200px
+        grid-template-columns: auto 1fr minmax(200px, 364px)
+        align-items: start
+        padding-top: 50px
+        padding-bottom: 30px
+        justify-self: center
+    .title-box
+        padding-right: 50px   
+
+    .link
+        font-size: 14px
+    .form
+        grid-template-columns: 1fr 120px 
+        grid-template-rows: 1fr 1fr
+        grid-template-areas: "text text" "email Subscribe"
+        column-gap: 10px
+
+    .Subscribe
+        grid-area: Subscribe
+    .email
+        grid-area: email
+    .form__text
+        grid-area: text
+    .links
+        text-align: start
+    .links__title
+        line-height: 100%
+        margin-bottom: 20px

@@ -1,0 +1,200 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+    scroll-behavior: smooth
+
+body
+    min-height: 100%
+    font-family: 'Roboto'
+    font-weight: 700
+    letter-spacing: 0.2rem
+
+.container
+    position: relative
+
+
+.aside
+    display: none
+.header
+    position: fixed
+    width: 100%
+    background-color: #D64200
+    align-items: center
+    display: grid
+    grid-template-columns: 1fr 
+    align-items: center
+    justify-content: center
+    //position: relative
+
+input
+    position: absolute
+    width: 1px
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+
+.menu
+    display: block
+    width: 100%
+    font-size: 2.2rem
+    color: white
+    padding: 2rem 4rem
+    letter-spacing: .1rem
+    cursor: pointer
+
+.arrow
+    position: absolute
+    width: 1rem
+    height: 1rem
+    top: 40%
+    right: 3rem
+    border-top: .3rem solid white
+    border-right: .3rem solid white
+    transform: rotate(135deg)
+    cursor: pointer
+
+   
+.nav-menu
+    display: block
+    position: absolute
+    width: 100%
+    background-color: #D64200
+    bottom: 0
+    left: 0
+    transform: translateY(100%)
+    max-height: 0
+    font-size: 0
+    overflow: hidden
+    transition: .5s all
+    &__item
+        display: block
+        text-decoration: none
+        padding: 2rem 4rem
+        font-size: 1.4rem
+        font-weight: 400
+        letter-spacing: .2rem
+        line-height: 150%
+        color: white
+        cursor: pointer
+        transition-duration: 0.5s all
+        
+
+.menu-item
+    border-top: .1rem solid rgba(255, 255, 255, 0.4)
+    &:hover
+        background-color: rgba(255, 182, 159, 0.3)
+        
+
+.li-box-logo
+    display: grid
+    grid-template-columns: auto auto
+
+.header__logo
+    padding: 2rem 3rem
+    justify-self: end
+    
+
+#dropdown:checked ~ .nav-menu
+    max-height: 59.4rem
+    font-size: 1.4rem
+
+#dropdown:checked ~ .arrow
+    transform: rotate(-45deg)
+    
+
+.main
+    display: grid
+    grid-template-columns: 1fr
+    row-gap: 3rem
+    padding: 10rem 0 0 1rem
+    &__title
+        font-size: 1.9rem
+        letter-spacing: .2rem
+        font-weight: 700
+        margin-bottom: 2rem
+    &__text
+        font-size: 1.9rem
+        letter-spacing: .2rem
+        font-weight: 400
+        line-height: 172.8%
+        margin-bottom: 2rem
+        
+.Intruduction
+    display: grid
+    grid-template-columns: 1fr
+    row-gap: 2rem
+    padding: 2rem 1rem
+
+.working-list
+    font-size: 1.9rem
+    letter-spacing: .2rem
+    font-weight: 400
+    line-height: 172.8%
+    list-style-type: disc
+    padding-left: 3rem
+
+    
+
+.bg-string
+    width: 100%
+    padding: 1.5rem
+    font-size: 1.6rem
+    letter-spacing: .1rem
+    font-weight: 400
+    line-height: 172.8%
+    margin-bottom: 2rem
+    background-color: #C8C4C5
+
+.bg-link
+    background-color: #C8C4C5
+
+@media (min-width: 991px)
+    .container
+        position: relative
+        display: grid
+        grid-template-columns: 300px 1fr
+        column-gap: 36px
+    .main
+        padding: 60px 0 0 0 
+        padding-right: calc( 10px + (90) * ((100vw - 375px) / (1600 - 375)))
+    
+    .header
+        display: none
+
+    .aside
+        display: block
+        background-color: #D64200
+        &__nav-item
+            border-top: 1px solid rgba(255, 255, 255, 0.4)
+            &:hover
+                background-color: rgba(255, 182, 159, 0.3)
+        &__item
+            display: block
+            text-decoration: none
+            padding: 20px 30px
+            font-size: 14px
+            font-weight: 400
+            letter-spacing: 1.5px
+            line-height: 150%
+            color: white
+            cursor: pointer
+    
+    .nav__title
+        font-size: 22px
+        color: white
+        padding: 20px  30px 10px 30px
+        letter-spacing: 1px
+
+    .logo
+        padding: 30px 0 0 30px
+    .aside__nav
+        position: sticky
+        top: 0

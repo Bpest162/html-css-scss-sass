@@ -1,0 +1,106 @@
+@import "resets.scss"
+@import "normalizes.scss"
+@import "variable.sass"
+@import "typography.sass"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+
+.wrapper
+    min-height: 100%
+    margin: 0 auto
+    display: grid
+    grid-template-rows: auto 1fr auto
+    
+    
+
+.heeader
+    background-color: $background-color-header
+    display: grid
+    justify-content: center
+    align-items: center
+    &__title
+        color: $color-white
+        padding: 6rem 
+
+
+.content
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 109px auto 109px
+
+.navigation
+    border-radius: 0 0 2.8rem 2.8rem
+    background-color: $background-color-navigation
+    &__title
+        padding: 3rem 
+
+.main
+    padding: 30px
+
+.links
+    border-radius: 2.8rem 2.8rem 0 0 
+    background-color: $background-color-links
+    &__title
+        padding: 3rem
+
+.footer
+    background-color: $background-color-footer
+    display: grid
+    justify-content: center
+    align-items: center
+    &__title
+        color: $color-white
+        padding: 6rem 
+
+
+    
+@media ( min-width: 767px )
+    
+    .title
+        font-size: 32px
+        
+
+@media ( min-width: 1024px )
+    .wrapper
+         gap: 22px
+
+    .content
+        display: grid
+        grid-template-columns: 331px auto 331px
+        grid-template-rows: 1fr
+       
+    .navigation
+        border-radius: 0 2.8rem 2.8rem 0
+        display: grid
+        justify-content: center
+        align-items: center
+        &__title
+            padding: 0
+        
+    .links
+        border-radius: 2.8rem 0 0 2.8rem
+        display: grid
+        justify-content: center
+        align-items: center
+        &__title
+            padding: 0
+    .title
+        font-size: 32px
+
+
+@media ( min-width: 1200px )
+    .content
+        grid-template-rows: 331px auto 331px 
+        grid-template-rows: 1fr
+        
+
+    .title
+        font-size: 40px
+
+
